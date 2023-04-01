@@ -3,7 +3,6 @@ import React from "react";
 const Contact = () => {
   return (
     <div
-      // name="contact"
       id="contact"
       className="w-full h-screen bg-[#161b33] flex justify-center items-center p-4"
     >

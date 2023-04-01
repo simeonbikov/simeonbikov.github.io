@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
@@ -12,28 +12,19 @@ const Navbar = () => {
     <div className="fixed w-full h-[50px] flex justify-end items-center px-4 bg-[#0d0c1d] text-white">
       {/* <img src={Logo} alt="Logo Image" style={{ width: "30px" }} /> */}
 
-      {/* menu */}
+      {/* navbar menu */}
       <ul className="hidden md:flex">
         <li>
-          {/* <Link to="/home" smooth={true} duration={500}>
-            Home
-          </Link> */}
           <HashLink smooth to="/#home">
             Home
           </HashLink>
         </li>
         <li>
-          {/* <Link to="/work" smooth={true} duration={500}>
+          <Link smooth to="/projects">
             Work
-          </Link> */}
-          <HashLink smooth to="/#projects">
-            Work
-          </HashLink>
+          </Link>
         </li>
         <li>
-          {/* <Link to="/contact" smooth={true} duration={500}>
-            Contact
-          </Link> */}
           <HashLink smooth to="/#contact">
             Contact
           </HashLink>
@@ -45,7 +36,7 @@ const Navbar = () => {
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
 
-      {/* Mobile menu */}
+      {/* mob menu */}
       <ul
         className={
           !nav
@@ -54,12 +45,12 @@ const Navbar = () => {
         }
       >
         <li className="py-6 text-4xl">
-          <HashLink smooth to="/#home">
+          <HashLink smooth to="/#home" onClick={handleClick}>
             Home
           </HashLink>
         </li>
         <li className="py-6 text-4xl">
-          <HashLink smooth to="/#projects">
+          <HashLink smooth to="/#projects" onClick={handleClick}>
             Work
           </HashLink>
         </li>
@@ -70,13 +61,13 @@ const Navbar = () => {
           <a href="https://github.com/simeonbikov">Github</a>
         </li>
         <li className="py-6 text-4xl">
-          <HashLink smooth to="/#contact">
+          <HashLink smooth to="/#contact" onClick={handleClick}>
             Contact
           </HashLink>
         </li>
       </ul>
 
-      {/* Social icons */}
+      {/* social icons */}
       <div className="hidden md:flex fixed flex-col top-[35%] left-0">
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#3772ff]">
