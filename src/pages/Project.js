@@ -1,12 +1,17 @@
-import React from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import React, { useEffect } from "react";
+import { useNavigate, useParams, useLocation } from "react-router-dom";
 import { data } from "../data/data.js";
 
 const Project = () => {
   // const navigate = useNavigate();
   const { id } = useParams();
   let project = data.find((proj) => proj.id === parseInt(id));
-  console.log(data);
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <div className="w-full text-[#000] bg-[#fdfffc]">

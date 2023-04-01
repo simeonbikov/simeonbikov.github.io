@@ -1,32 +1,42 @@
 import React, { useState } from "react";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
+import { HashLink } from "react-router-hash-link";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-// import Logo from "../images/logo.png";
+// import Logo from "../assets/logo.png";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
   return (
     <div className="fixed w-full h-[50px] flex justify-end items-center px-4 bg-[#0d0c1d] text-white">
-      {/* <img src={Logo} alt="Logo Image" style={{ width: "50px" }} /> */}
+      {/* <img src={Logo} alt="Logo Image" style={{ width: "30px" }} /> */}
 
       {/* menu */}
       <ul className="hidden md:flex">
         <li>
-          <Link to="/home" smooth={true} duration={500}>
+          {/* <Link to="/home" smooth={true} duration={500}>
             Home
-          </Link>
+          </Link> */}
+          <HashLink smooth to="/#home">
+            Home
+          </HashLink>
         </li>
         <li>
-          <Link to="/work" smooth={true} duration={500}>
+          {/* <Link to="/work" smooth={true} duration={500}>
             Work
-          </Link>
+          </Link> */}
+          <HashLink smooth to="/#projects">
+            Work
+          </HashLink>
         </li>
         <li>
-          <Link to="/contact" smooth={true} duration={500}>
+          {/* <Link to="/contact" smooth={true} duration={500}>
             Contact
-          </Link>
+          </Link> */}
+          <HashLink smooth to="/#contact">
+            Contact
+          </HashLink>
         </li>
       </ul>
 
@@ -44,28 +54,25 @@ const Navbar = () => {
         }
       >
         <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="home" smooth={true} duration={500}>
+          <HashLink smooth to="/#home">
             Home
-          </Link>
+          </HashLink>
         </li>
         <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="work" smooth={true} duration={500}>
+          <HashLink smooth to="/#projects">
             Work
-          </Link>
+          </HashLink>
         </li>
         <li className="py-6 text-4xl">
-          <a href="https://linkedin.com/in/simeonbikov">
-            Linkedin
-          </a>
+          <a href="https://linkedin.com/in/simeonbikov">Linkedin</a>
         </li>
         <li className="py-6 text-4xl">
           <a href="https://github.com/simeonbikov">Github</a>
         </li>
         <li className="py-6 text-4xl">
-          {" "}
-          <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
+          <HashLink smooth to="/#contact">
             Contact
-          </Link>
+          </HashLink>
         </li>
       </ul>
 
@@ -89,14 +96,13 @@ const Navbar = () => {
             </a>
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#da627d]">
-            <Link
-              to="contact"
-              smooth={true}
-              duration={500}
+            <HashLink
+              smooth
+              to="/#contact"
               className="flex justify-between items-center w-full text-[#fdfffc]"
             >
               Contact <HiOutlineMail size={30} />
-            </Link>
+            </HashLink>
           </li>
         </ul>
       </div>

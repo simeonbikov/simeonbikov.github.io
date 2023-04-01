@@ -5,10 +5,9 @@ import { data } from "../data/data.js";
 const Projects = () => {
   const navigate = useNavigate();
   const projects = [...data].reverse();
-  //setProject(data);
 
   return (
-    <div name="work" className="w-full text-[#000] bg-[#fdfffc]">
+    <div id="projects" className="w-full text-[#000] bg-[#fdfffc]">
       <div className="lg:max-w-[800px] xl:max-w-[1200px] mx-auto p-10 flex flex-col justify-center">
         {/* <div className="pb-8 pt-8"> */}
         <div className="py-10">
