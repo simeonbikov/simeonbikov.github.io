@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/simeonbikov.github.io/static/css/main.f6f32928.css",
+    "main.css": "/simeonbikov.github.io/static/css/main.20cd1bb8.css",
     "main.js": "/simeonbikov.github.io/static/js/main.196b993a.js",
     "static/media/p4-2.png": "/simeonbikov.github.io/static/media/p4-2.96e079285978b88ae066.png",
     "static/media/p6.png": "/simeonbikov.github.io/static/media/p6.24b5fbea6dccbbbf8fec.png",
@@ -17,11 +17,11 @@
     "static/media/t3.png": "/simeonbikov.github.io/static/media/t3.5c914e88640fdef13536.png",
     "static/media/t3-2.png": "/simeonbikov.github.io/static/media/t3-2.160f183c2e3eced5eb3f.png",
     "index.html": "/simeonbikov.github.io/index.html",
-    "main.f6f32928.css.map": "/simeonbikov.github.io/static/css/main.f6f32928.css.map",
+    "main.20cd1bb8.css.map": "/simeonbikov.github.io/static/css/main.20cd1bb8.css.map",
     "main.196b993a.js.map": "/simeonbikov.github.io/static/js/main.196b993a.js.map"
   },
   "entrypoints": [
-    "static/css/main.f6f32928.css",
+    "static/css/main.20cd1bb8.css",
     "static/js/main.196b993a.js"
   ]
 }
