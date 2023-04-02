@@ -73,7 +73,7 @@ export const data = [
     github: " https://github.com/simeonbikov/lettersfall-game",
     live: "https://lettersfall-game.netlify.app/",
     summary:
-      "This game is my coursework in JavaScript. The rules of the game are simple. When you start the game a random word appears that you need to remember, then random letters move from top to bottom of the playing field and you need to collect the correct letters from the word.",
+      "This game is my coursework in JavaScript. The rules of the game are simple. When you start the game, a random word appears that you need to remember. Then, random letters move from top to bottom of the playing field, and you need to collect the correct letters from the word.",
   },
   {
     id: 6,
@@ -86,12 +86,12 @@ export const data = [
     live: "https://cyf-simeonbikov-tv.netlify.app/",
     templatesImg: [ImgTempl6, ImgTempl6_2],
     summary:
-      "Created web page from a templates.  Page loads shows and episodes from TVMaze API using fetch. Added a select inputs to choose episode or show. Implemented 'Live' search input with highlighting the search result.",
+      "Created web page from a templates. Page loads shows and episodes from TVMaze API using fetch. Added a select inputs to choose episode or show. Implemented 'Live' search input with highlighting the search result.",
   },
   {
     id: 7,
     date: "01/2023",
-    technologies: "Design, React JS, Rest API, Node, PostgreSQL, Material UI",
+    technologies: "Design, React JS, Material UI, Rest API, Node, PostgreSQL",
     type: "CodeYourFuture homework/coursework",
     name: "Video Recommendation",
     images: [ImgPic7],

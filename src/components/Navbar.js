@@ -9,7 +9,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
   return (
-    <div className="fixed w-full h-[50px] flex justify-end items-center px-4 bg-[#0d0c1d] text-white">
+    <div className="fixed w-full h-[60px] flex justify-end items-center px-4 bg-[#0d0c1d] text-white">
       {/* <img src={Logo} alt="Logo Image" style={{ width: "30px" }} /> */}
 
       {/* navbar menu */}
@@ -20,7 +20,7 @@ const Navbar = () => {
           </HashLink>
         </li>
         <li>
-          <Link smooth to="/projects">
+          <Link to="/projects">
             Work
           </Link>
         </li>
@@ -50,9 +50,9 @@ const Navbar = () => {
           </HashLink>
         </li>
         <li className="py-6 text-4xl">
-          <HashLink smooth to="/#projects" onClick={handleClick}>
+          <Link to="/projects" onClick={handleClick}>
             Work
-          </HashLink>
+          </Link>
         </li>
         <li className="py-6 text-4xl">
           <a href="https://linkedin.com/in/simeonbikov">Linkedin</a>

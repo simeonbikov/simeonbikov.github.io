@@ -1,17 +1,22 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import { data } from "../data/data.js";
 
 const Projects = () => {
   const navigate = useNavigate();
   const projects = [...data].reverse();
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <div id="projects" className="w-full text-[#000] bg-[#fdfffc]">
       <div className="lg:max-w-[800px] xl:max-w-[1200px] mx-auto p-10 flex flex-col justify-center">
         <div className="py-10">
-          <p className="text-2xl font-medium text-center">
-            // Check out some of my recent work:
+          <p className="text-3xl font-medium text-center">
+            {"{ Check out some of my recent work }"}
           </p>
         </div>
 
@@ -28,10 +33,13 @@ const Projects = () => {
               >
                 {/* Hover images */}
                 <div className="opacity-0 group-hover:opacity-100 ">
-                  <span className="text-2xl font bold text-white tracking-wider ">
+                  <p className="text-2xl font bold text-white tracking-wider ">
                     {project.name}
-                  </span>
-                  <div className="py-4 text-center ">
+                  </p>
+                  {/* <p className="text-sm font bold text-white tracking-wider mx-3">
+                    {project.date}
+                  </p> */}
+                  <div className="py-3 text-center ">
                     {/* eslint-disable */}
                     <button
                       className="bg-[#161b33] text-white border-2 px-8 py-2 m-4 text-lg hover:bg-[#0d0c1d]"
@@ -42,9 +50,15 @@ const Projects = () => {
                       More Info
                     </button>
                   </div>
-                  <span className="text-sm font bold text-white tracking-wider mx-3">
+                  <p className="text-sm font bold text-white tracking-wider mb-3">
+                    {project.date}
+                  </p>
+                  <p className="text-sm font bold text-white tracking-wider mx-5">
                     {project.technologies}
-                  </span>
+                  </p>
+                  {/* <p className="text-sm font bold text-white tracking-wider mx-3">
+                    {project.date}
+                  </p> */}
                 </div>
               </div>
             );

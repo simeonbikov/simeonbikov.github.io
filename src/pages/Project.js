@@ -1,12 +1,10 @@
 import React, { useEffect } from "react";
-import { useNavigate, useParams, useLocation } from "react-router-dom";
+import { useParams, useLocation } from "react-router-dom";
 import { data } from "../data/data.js";
 
 const Project = () => {
-  // const navigate = useNavigate();
   const { id } = useParams();
-  let project = data.find((proj) => proj.id === parseInt(id));
-
+  const project = data.find((proj) => proj.id === parseInt(id));
   const { pathname } = useLocation();
 
   useEffect(() => {
@@ -15,25 +13,25 @@ const Project = () => {
 
   return (
     <div className="w-full text-[#000] bg-[#fdfffc]">
-      <div className="max-w-[900px] mx-auto pt-10 px-3 md:px-[60px] flex flex-col justify-center">
+      <div className="max-w-[900px] mx-auto pt-[60px] px-3 md:px-[60px] flex flex-col justify-center">
         {project.name && (
-          <div className="py-10">
-            <h1 className="text-3xl font-medium text-center">{project.name}</h1>
+          <div className="py-8">
+            <h1 className="text-3xl font-medium text-center">{`{ ${project.name} }`}</h1>
           </div>
         )}
 
         <div className="flex justify-between p-4">
           {project.date && (
-            <p className="text-xl font-medium pr-2">{project.date}</p>
+            <p className="text-lg font-medium pr-2">{project.date}</p>
           )}
           {project.technologies && (
-            <p className="text-xl font-medium pl-2">{project.technologies}</p>
+            <p className="text-lg font-medium pl-2">{project.technologies}</p>
           )}
         </div>
 
         <div className="p-4">
           {project.type && (
-            <p className="text-xl font-medium text-center py-4">
+            <p className="text-2xl font-medium text-center pb-6">
               {project.type}
             </p>
           )}
@@ -58,7 +56,7 @@ const Project = () => {
           )}
         </div>
 
-        <div className="flex justify-evenly p-4">
+        <div className="flex justify-evenly">
           {project.github && (
             <button
               onClick={() => {
@@ -83,13 +81,13 @@ const Project = () => {
 
         {project.images && (
           <>
-            <p className="text-xl font-medium text-center pt-4">Screenshots:</p>
-            <div className="flex justify-center p-4">
+            <p className="text-2xl font-medium text-center pt-4">Screenshots:</p>
+            <div className="flex flex-col justify-center items-center p-4">
               {project.images.map((image, index) => {
                 return (
                   <div
                     key={index}
-                    className="max-w-[500px] h-[100%] m-4 shadow-md shadow-[#040c16]"
+                    className="max-w-[400px] h-[100%] m-5 shadow-md shadow-[#040c16]"
                   >
                     <img
                       src={image}
@@ -104,7 +102,7 @@ const Project = () => {
 
         {project.templatesImg && (
           <>
-            <p className="text-xl font-medium text-center pt-8">Templates:</p>
+            <p className="text-2xl font-medium text-center pt-8">Templates:</p>
             <div className="flex justify-center p-4">
               {project.templatesImg.map((image, index) => {
                 return (

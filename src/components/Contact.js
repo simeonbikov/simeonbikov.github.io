@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="w-full h-screen bg-[#161b33] flex justify-center items-center p-4"
+      className="w-full h-screen bg-[#fdfffc] flex justify-center items-center p-4"
     >
       <form
         method="POST"
@@ -15,8 +15,8 @@ const Contact = () => {
           {/* <p className="text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300">
             Contact
           </p> */}
-          <p className="text-gray-300 text-2xl font-medium py-4">
-            // Shoot me an email
+          <p className="text-black text-3xl text-center font-medium py-4">
+            {"{ Shoot me an email }"}
           </p>
         </div>
         <input
@@ -37,7 +37,7 @@ const Contact = () => {
           rows="10"
           placeholder="Message"
         ></textarea>
-        <button className="bg-[#161b33] text-white border-2 px-8 py-2 m-8 text-lg hover:bg-[#0d0c1d] mx-auto flex items-center">
+        <button className="bg-[#fdfffc] text-black border-2 border-black px-8 py-2 m-8 text-lg hover:bg-white mx-auto flex items-center">
           Let's Collaborate
         </button>
         {/* <button className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center">
