@@ -12,9 +12,9 @@ const Projects = () => {
   }, [pathname]);
 
   return (
-    <div id="projects" className="w-full text-[#000] bg-[#fdfffc]">
-      <div className="lg:max-w-[800px] xl:max-w-[1200px] mx-auto p-10 flex flex-col justify-center">
-        <div className="py-10">
+    <div id="projects" className="w-full text-[#000] bg-[#fdfffc] pt-[60px]">
+      <div className="lg:max-w-[900px] xl:max-w-[1200px] mx-auto p-5 flex flex-col justify-center">
+        <div className="py-6 mb-5">
           <p className="text-3xl font-medium text-center">
             {"{ Check out some of my recent work }"}
           </p>

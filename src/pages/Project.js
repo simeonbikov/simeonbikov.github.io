@@ -12,11 +12,11 @@ const Project = () => {
   }, [pathname]);
 
   return (
-    <div className="w-full text-[#000] bg-[#fdfffc]">
-      <div className="max-w-[900px] mx-auto pt-[60px] px-3 md:px-[60px] flex flex-col justify-center">
+    <div className="w-full text-[#000] bg-[#fdfffc] pt-[60px] px-4 md:pl-[60px]">
+      <div className="max-w-[900px] mx-auto flex flex-col justify-center py-4">
         {project.name && (
           <div className="py-8">
-            <h1 className="text-3xl font-medium text-center">{`{ ${project.name} }`}</h1>
+            <h1 className="text-3xl font-medium text-center px-4">{`{ ${project.name} }`}</h1>
           </div>
         )}
 
@@ -29,7 +29,7 @@ const Project = () => {
           )}
         </div>
 
-        <div className="p-4">
+        <div className="px-4">
           {project.type && (
             <p className="text-2xl font-medium text-center pb-6">
               {project.type}
@@ -56,7 +56,7 @@ const Project = () => {
           )}
         </div>
 
-        <div className="flex justify-evenly">
+        <div className="flex justify-evenly px-4">
           {project.github && (
             <button
               onClick={() => {
@@ -81,8 +81,10 @@ const Project = () => {
 
         {project.images && (
           <>
-            <p className="text-2xl font-medium text-center pt-4">Screenshots:</p>
-            <div className="flex flex-col justify-center items-center p-4">
+            <p className="text-2xl font-medium text-center pt-4 px-4">
+              Screenshots:
+            </p>
+            <div className="flex flex-col justify-center items-center px-4">
               {project.images.map((image, index) => {
                 return (
                   <div
