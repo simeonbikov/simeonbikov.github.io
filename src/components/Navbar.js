@@ -9,22 +9,20 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
   return (
-    <div className="fixed w-full h-[60px] flex justify-end items-center px-4 bg-[#0d0c1d] text-white">
+    <div className="fixed w-full h-[60px] flex justify-end items-center px-4 bg-dark1 text-light1">
       {/* <img src={Logo} alt="Logo Image" style={{ width: "30px" }} /> */}
 
       {/* navbar menu */}
       <ul className="hidden md:flex">
-        <li>
+        <li className="hover:text-primary2">
           <HashLink smooth to="/#home">
             Home
           </HashLink>
         </li>
-        <li>
-          <Link to="/projects">
-            Projects
-          </Link>
+        <li className="hover:text-primary2">
+          <Link to="/projects">Projects</Link>
         </li>
-        <li>
+        <li className="hover:text-primary2">
           <HashLink smooth to="/#contact">
             Contact
           </HashLink>
@@ -41,7 +39,7 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#0d0c1d] flex flex-col justify-center items-center"
+            : "absolute top-0 left-0 w-full h-screen bg-dark1 flex flex-col justify-center items-center"
         }
       >
         <li className="py-6 text-4xl">
@@ -70,27 +68,27 @@ const Navbar = () => {
       {/* social icons */}
       <div className="hidden md:flex fixed flex-col top-[35%] left-0">
         <ul>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#3772ff]">
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-primary1">
             <a
-              className="flex justify-between items-center w-full text-[#fdfffc]"
+              className="flex justify-between items-center w-full text-dark1"
               href="https://linkedin.com/in/simeonbikov"
             >
               Linkedin <FaLinkedin size={30} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-primary2">
             <a
-              className="flex justify-between items-center w-full text-[#fdfffc]"
+              className="flex justify-between items-center w-full text-dark1"
               href="https://github.com/simeonbikov"
             >
               Github <FaGithub size={30} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#da627d]">
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-primary3">
             <HashLink
               smooth
               to="/#contact"
-              className="flex justify-between items-center w-full text-[#fdfffc]"
+              className="flex justify-between items-center w-full text-dark1"
             >
               Contact <HiOutlineMail size={30} />
             </HashLink>

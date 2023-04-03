@@ -12,7 +12,7 @@ const Project = () => {
   }, [pathname]);
 
   return (
-    <div className="w-full text-[#000] bg-[#fdfffc] pt-[60px] px-4 md:pl-[60px]">
+    <div className="w-full text-dark1 bg-light1 pt-[60px] px-4 md:pl-[60px]">
       <div className="max-w-[900px] mx-auto flex flex-col justify-center py-4">
         {project.name && (
           <div className="py-8">
@@ -62,7 +62,7 @@ const Project = () => {
               onClick={() => {
                 window.location.href = project.github;
               }}
-              className="bg-[#fdfffc] text-[#0d0c1d] border-[#0d0c1d] border-2 px-8 py-2 m-8 text-lg hover:bg-[#fff] mx-auto flex items-center"
+              className="bg-light1 text-dark1 border-dark1 border-2 px-8 py-2 m-8 text-lg hover:bg-primary2 mx-auto flex items-center"
             >
               Source Code
             </button>
@@ -72,7 +72,7 @@ const Project = () => {
               onClick={() => {
                 window.location.href = project.live;
               }}
-              className="bg-[#fdfffc] text-[#0d0c1d] border-[#0d0c1d] border-2 px-8 py-2 m-8 text-lg hover:bg-[#fff] mx-auto flex items-center"
+              className="bg-light1 text-dark1 border-dark1 border-2 px-8 py-2 m-8 text-lg hover:bg-primary2 mx-auto flex items-center"
             >
               Demo
             </button>
@@ -89,7 +89,7 @@ const Project = () => {
                 return (
                   <div
                     key={index}
-                    className="max-w-[400px] h-[100%] m-5 shadow-md shadow-[#040c16]"
+                    className="max-w-[400px] h-[100%] m-5 shadow-md shadow-dark2"
                   >
                     <img
                       src={image}
@@ -110,7 +110,7 @@ const Project = () => {
                 return (
                   <div
                     key={index}
-                    className="max-w-[250px] h-[100%] m-4 shadow-md shadow-[#040c16]"
+                    className="max-w-[250px] h-[100%] m-4 shadow-md shadow-dark2"
                   >
                     <img
                       src={image}

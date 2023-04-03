@@ -3,7 +3,6 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Project from "./pages/Project";
 import Navbar from "./components/Navbar";
-// import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -15,7 +14,6 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/project/:id" element={<Project />} />
         </Routes>
-        {/* <Footer /> */}
       </Router>
     </div>
   );
