@@ -111,7 +111,7 @@ const Project = () => {
             <p className="text-lg sm:text-2xl font-medium text-center pt-8">
               Template:
             </p>
-            <div className="flex justify-center p-4">
+            <div className="flex flex-wrap justify-center p-4">
               {project.templatesImg.map((image, index) => {
                 return (
                   <div
