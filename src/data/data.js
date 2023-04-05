@@ -1,103 +1,133 @@
-import ImgPic1 from "../assets/images/p1.png";
-import ImgPic2 from "../assets/images/p2.png";
-import ImgPic2_2 from "../assets/images/p2-2.png";
+import ImgProj1 from "../assets/images/p1.png";
+import ImgTempl1 from "../assets/images/t1.png";
+import ImgProj2 from "../assets/images/p2.png";
+import ImgProj2_2 from "../assets/images/p2-2.png";
 import ImgTempl3 from "../assets/images/t3.png";
 import ImgTempl3_2 from "../assets/images/t3-2.png";
-import ImgPic3 from "../assets/images/p3.png";
-import ImgPic3_2 from "../assets/images/p3-2.png";
-import ImgPic4_2 from "../assets/images/p4-2.png";
-import ImgPic5 from "../assets/images/p5.png";
-import ImgPic6 from "../assets/images/p6.png";
-import ImgPic6_2 from "../assets/images/p6-2.png";
+import ImgProj3 from "../assets/images/p3.png";
+import ImgProj3_2 from "../assets/images/p3-2.png";
+import ImgProj4_2 from "../assets/images/p4-2.png";
+import ImgProj5 from "../assets/images/p5.png";
+import ImgProj6 from "../assets/images/p6.png";
+import ImgProj6_2 from "../assets/images/p6-2.png";
 import ImgTempl6 from "../assets/images/t6.png";
 import ImgTempl6_2 from "../assets/images/t6-2.png";
-import ImgPic7 from "../assets/images/p7.png";
+import ImgProj7 from "../assets/images/p7.png";
+import ImgProj8 from "../assets/images/p8.png";
+import ImgProj8_2 from "../assets/images/p8-2.png";
+import ImgProj9 from "../assets/images/p9.png";
+import ImgProj9_2 from "../assets/images/p9-2.png";
 
 export const data = [
   {
     id: 1,
     date: "06/2022",
     technologies: "Design, HTML, CSS",
-    type: "CodeYourFuture homework/coursework",
+    type: "CodeYourFuture - homework/coursework",
     name: "The Daily Prophet",
-    images: [ImgPic1],
+    images: [ImgProj1],
     github: "https://github.com/simeonbikov/HTML-CSS-Coursework-Week1",
     live: "https://cyf-thedailyprophet.netlify.app/",
+    templatesImg: [ImgTempl1],
     summary:
-      "Created a webpage with three articles, each including a title, picture and summary.",
+      "For one of my first homework assignments, I created a webpage featuring three articles, each article includes a title, picture, and summary, using templates as a starting point for the design.",
   },
   {
     id: 2,
     date: "07/2022",
     technologies: "Design, HTML, CSS",
-    type: "CodeYourFuture homework/coursework",
+    type: "CodeYourFuture - homework/coursework",
     name: "Cakes Co",
-    images: [ImgPic2, ImgPic2_2],
+    images: [ImgProj2, ImgProj2_2],
     github: "https://github.com/simeonbikov/HTML-CSS-Coursework-Week3",
     live: "https://cyf-simeonbikov-cake.netlify.app/",
     templatesImg: [ImgTempl3, ImgTempl3_2],
     summary:
-      "Created responsive webpage showcasing cake business from a templates. Followed Mobile First principles.",
+      "Created a responsive website to showcase a cake business, using templates as a starting point for the design. Followed Mobile First principles.",
   },
   {
     id: 3,
     date: "07/2022",
     technologies: "Copy Design, HTML, CSS",
-    type: "CodeYourFuture homework/coursework",
+    type: "CodeYourFuture - homework/coursework",
     name: "Karma Clone",
-    images: [ImgPic3, ImgPic3_2],
+    images: [ImgProj3, ImgProj3_2],
     github: "https://github.com/simeonbikov/HTML-CSS-Coursework-Week3",
     live: "https://cyf-simeonbikov-karma.netlify.app/",
-    summary: "Created the page from a sketch.",
+    summary: "Created the webpage based on a provided sketch.",
   },
   {
     id: 4,
     date: "07/2022",
     technologies: "Copy Design, HTML, CSS",
-    type: "CodeYourFuture homework/coursework",
+    type: "CodeYourFuture - homework/coursework",
     name: "Juice Bar - wix.com Clone",
-    images: [ImgPic4_2],
+    images: [ImgProj4_2],
     github: "https://github.com/simeonbikov/responsive-grid-project.git",
     live: "https://cyf-simeonbikov-juicebar.netlify.app/",
     templatesUrl: "https://www.wix.com/website-template/view/html/2962",
     summary:
-      "Created a mobile-first, responsive website. Used CSS Grid and Flexbox for layouts and alignment.",
+      "Created a mobile-first, responsive clone of website. Used CSS Grid and Flexbox for layouts and alignment.",
   },
   {
     id: 5,
     date: "10/2022",
     technologies: "JavaScript, Canvas",
-    type: "CodeYourFuture homework/coursework",
-    name: "Lettersfall Game",
-    images: [ImgPic5],
+    type: "CodeYourFuture - homework/coursework",
+    name: "LettersFall Game",
+    images: [ImgProj5],
     github: " https://github.com/simeonbikov/lettersfall-game",
     live: "https://lettersfall-game.netlify.app/",
     summary:
-      "This game is my coursework in JavaScript. The rules of the game are simple. When you start the game, a random word appears that you need to remember. Then, random letters move from top to bottom of the playing field, and you need to collect the correct letters from the word.",
+      "Created a memory game as part of my JavaScript coursework. The objective of the game is to collect the correct letters from a randomly generated word as they move across the screen. The game starts by displaying a word that the player needs to remember. As the game progresses, letters move from left to right across the screen, and the player must collect the correct letters before they reach the bottom of the screen. The game ends when the player collects all the letters in the word.",
   },
   {
     id: 6,
     date: "11/2022",
     technologies: "Design, JavaScript, DOM, HTML, CSS",
-    type: "CodeYourFuture homework/coursework",
+    type: "CodeYourFuture - homework/coursework",
     name: "TV Show Project",
-    images: [ImgPic6, ImgPic6_2],
+    images: [ImgProj6, ImgProj6_2],
     github: "https://github.com/simeonbikov/tv-show-dom-project",
     live: "https://cyf-simeonbikov-tv.netlify.app/",
     templatesImg: [ImgTempl6, ImgTempl6_2],
     summary:
-      "Created web page from a templates. Page loads shows and episodes from TVMaze API using fetch. Added a select inputs to choose episode or show. Implemented 'Live' search input with highlighting the search result.",
+      "Created a web page using a template that retrieves information about TV shows and episodes from the TVMaze API using the fetch function. The page features select inputs that allow users to choose between different episodes or shows. Additionally, a real-time search input is implemented that highlights the search result as it is typed. ",
   },
   {
     id: 7,
     date: "01/2023",
-    technologies: "Design, React JS, Material UI, Rest API, Node, PostgreSQL",
-    type: "CodeYourFuture homework/coursework",
+    technologies: "Design, React JS, Material UI, Rest APIs, Node, PostgreSQL",
+    type: "CodeYourFuture - homework/coursework",
     name: "Video Recommendation",
-    images: [ImgPic7],
+    images: [ImgProj7],
     github: "https://github.com/simeonbikov/Full-Stack-Project-Assessment",
     live: "https://cyf-video-recommendation.netlify.app/",
     summary:
-      "Created a Full Stack app for viewing a list of recommended videos. Implemented the ability to post and delete your youtube videos, “vote up” and “vote down” for the video, sort videos in ascending and descending order by rating. API built on Express., all data stored in the created database in PostgreSQL.",
+      "Developed a Full Stack web application for viewing recommended videos. The app allows users to post and delete their favourite YouTube videos, upvote or downvote videos, and sort videos in ascending or descending order by rating. The app's API was built using Express, and all data is stored in a PostgreSQL database that was created.",
+  },
+  {
+    id: 8,
+    date: "03/2023",
+    technologies:
+      "Agile methodology, React JS, Bootstrap, Rest APIs/Express, Node, PostgreSQL",
+    type: "CodeYourFuture - Team Project",
+    name: "Future Hire - Team Project",
+    images: [ImgProj8, ImgProj8_2],
+    github: "https://github.com/simeonbikov/future-hire",
+    // live: "https://cyf-future-hire.onrender.com/",
+    summary:
+      "Using the Agile methodology, a team consisting of 4 developers, 1 Product Manager, 1 Product Owner, and 1 Tech Lead created an Overview Page for CodeYourFuture graduates who are currently looking for a job. This was a Minimum Viable Product (MVP) project, and it lasted 4 weeks, including 4 sprints and daily meetings with the team of developers. As a Full Stack Developer, my role involved writing part of both the Back End and the Front End.",
+  },
+  {
+    id: 9,
+    date: "04/2023",
+    technologies: "Design, React JS, Tailwind CSS",
+    name: "Portfolio/Home Page",
+    images: [ImgProj9, ImgProj9_2],
+    github: "https://github.com/simeonbikov/simeonbikov.github.io",
+    // live: "https://simeonbikov.github.io/",
+    summary:
+      "Developed a personal website to showcase my work during my coding bootcamp training at CodeYourFuture. By structuring my work in one place, so I can share it and demonstrate my progress over time.",
   },
 ];

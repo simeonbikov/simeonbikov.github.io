@@ -12,10 +12,10 @@ const Projects = () => {
   }, [pathname]);
 
   return (
-    <div id="projects" className="w-full text-dark1 bg-light1 pt-[60px]">
-      <div className="lg:max-w-[900px] xl:max-w-[1200px] mx-auto p-5 flex flex-col justify-center">
+    <div id="projects" className="w-full text-dark1 bg-light1 py-[60px]">
+      <div className="lg:max-w-[900px] xl:max-w-[1200px] mx-auto px-6 flex flex-col justify-center">
         <div className="py-6 mb-5">
-          <p className="text-3xl font-medium text-center">
+          <p className="text-lg sm:text-3xl font-medium text-center">
             {"{ Check out some of my recent work }"}
           </p>
         </div>
@@ -31,8 +31,11 @@ const Projects = () => {
               >
                 {/* Hover images */}
                 <div className="opacity-0 group-hover:opacity-100 ">
-                  <p className="text-2xl font bold text-light1 tracking-wider ">
+                  <p className="text-lg sm:text-2xl font bold text-light1 tracking-wider ">
                     {project.name}
+                  </p>
+                  <p className="text-sm font bold text-light1 tracking-wider ">
+                    {project.date}
                   </p>
                   <div className="py-3 text-center ">
                     {/* eslint-disable */}
@@ -45,9 +48,9 @@ const Projects = () => {
                       More Info
                     </button>
                   </div>
-                  <p className="text-sm font bold text-light1 tracking-wider mb-3">
+                  {/* <p className="text-sm font bold text-light1 tracking-wider mb-3">
                     {project.date}
-                  </p>
+                  </p> */}
                   <p className="text-sm font bold text-light1 tracking-wider mx-5">
                     {project.technologies}
                   </p>
