@@ -50,6 +50,8 @@ const Project = () => {
                 Cloned from
                 <a
                   href={project.templatesUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-sm md:text-lg font-medium text-blue-800 hover:text-blue-500"
                 >
                   {" "}
@@ -85,7 +87,7 @@ const Project = () => {
 
         {project.images && (
           <>
-            <p className="text-lg sm:text-2xl font-medium text-center pt-4">
+            <p className="text-lg sm:text-2xl font-medium text-center py-4">
               Screenshots:
             </p>
             <div className="flex flex-col justify-center items-center">
@@ -93,7 +95,7 @@ const Project = () => {
                 return (
                   <div
                     key={index}
-                    className="max-w-[400px] h-[100%] m-5 shadow-md shadow-dark2"
+                    className="max-w-[500px] h-[100%] my-5 shadow-md shadow-dark2"
                   >
                     <img
                       src={image}
@@ -116,7 +118,7 @@ const Project = () => {
                 return (
                   <div
                     key={index}
-                    className="max-w-[250px] h-[100%] m-4 shadow-md shadow-dark2"
+                    className="max-w-[300px] h-[100%] m-4 shadow-md shadow-dark2"
                   >
                     <img
                       src={image}

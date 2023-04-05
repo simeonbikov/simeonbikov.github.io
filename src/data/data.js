@@ -27,7 +27,7 @@ export const data = [
     name: "The Daily Prophet",
     images: [ImgProj1],
     github: "https://github.com/simeonbikov/HTML-CSS-Coursework-Week1",
-    live: "https://cyf-thedailyprophet.netlify.app/",
+    // live: "https://cyf-thedailyprophet.netlify.app/",
     templatesImg: [ImgTempl1],
     summary:
       "For one of my first homework assignments, I created a webpage featuring three articles, each article includes a title, picture, and summary, using templates as a starting point for the design.",
@@ -40,7 +40,7 @@ export const data = [
     name: "Cakes Co",
     images: [ImgProj2, ImgProj2_2],
     github: "https://github.com/simeonbikov/HTML-CSS-Coursework-Week3",
-    live: "https://cyf-simeonbikov-cake.netlify.app/",
+    // live: "https://cyf-simeonbikov-cake.netlify.app/",
     templatesImg: [ImgTempl3, ImgTempl3_2],
     summary:
       "Created a responsive website to showcase a cake business, using templates as a starting point for the design. Followed Mobile First principles.",
@@ -53,7 +53,7 @@ export const data = [
     name: "Karma Clone",
     images: [ImgProj3, ImgProj3_2],
     github: "https://github.com/simeonbikov/HTML-CSS-Coursework-Week3",
-    live: "https://cyf-simeonbikov-karma.netlify.app/",
+    // live: "https://cyf-simeonbikov-karma.netlify.app/",
     summary: "Created the webpage based on a provided sketch.",
   },
   {
@@ -86,13 +86,14 @@ export const data = [
     date: "11/2022",
     technologies: "Design, JavaScript, DOM, HTML, CSS",
     type: "CodeYourFuture - homework/coursework",
+    isDesktop: true,
     name: "TV Show Project",
     images: [ImgProj6, ImgProj6_2],
     github: "https://github.com/simeonbikov/tv-show-dom-project",
     live: "https://cyf-simeonbikov-tv.netlify.app/",
     templatesImg: [ImgTempl6, ImgTempl6_2],
     summary:
-      "Created a web page using a template that retrieves information about TV shows and episodes from the TVMaze API using the fetch function. The page features select inputs that allow users to choose between different episodes or shows. Additionally, a real-time search input is implemented that highlights the search result as it is typed. ",
+      "Created a web page using a template that fetches information about TV shows and episodes from the TVMaze API. The page features select inputs that allow users to choose between different episodes or shows. Additionally, a real-time search input is implemented that highlights the search result as it is typed. ",
   },
   {
     id: 7,
@@ -104,7 +105,7 @@ export const data = [
     github: "https://github.com/simeonbikov/Full-Stack-Project-Assessment",
     live: "https://cyf-video-recommendation.netlify.app/",
     summary:
-      "Developed a Full Stack web application for viewing recommended videos. The app allows users to post and delete their favourite YouTube videos, upvote or downvote videos, and sort videos in ascending or descending order by rating. The app's API was built using Express, and all data is stored in a PostgreSQL database that was created.",
+      "Developed a Full Stack web application for viewing recommended videos. The app allows users to post and delete their favourite YouTube videos, upvote or downvote videos and sort videos in ascending or descending order by rating. The app's API was built using Express, and all data is stored in a PostgreSQL database that was created.",
   },
   {
     id: 8,
@@ -117,12 +118,12 @@ export const data = [
     github: "https://github.com/simeonbikov/future-hire",
     // live: "https://cyf-future-hire.onrender.com/",
     summary:
-      "Using the Agile methodology, a team consisting of 4 developers, 1 Product Manager, 1 Product Owner, and 1 Tech Lead created an Overview Page for CodeYourFuture graduates who are currently looking for a job. This was a Minimum Viable Product (MVP) project, and it lasted 4 weeks, including 4 sprints and daily meetings with the team of developers. As a Full Stack Developer, my role involved writing part of both the Back End and the Front End.",
+      "Using the Agile methodology, a team consisting of 4 developers, 1 Product Manager, 1 Product Owner, and 1 Tech Lead created an Overview Page for CodeYourFuture graduates who are currently looking for a job. This was a Minimum Viable Product (MVP) project and it lasted 4 weeks, including weekly sprints with the whole team and daily meetings with the team of developers. As a Full Stack Developer, my role involved writing part of both the Back End and the Front End.",
   },
   {
     id: 9,
     date: "04/2023",
-    technologies: "Design, React JS, Tailwind CSS",
+    technologies: "React JS, Tailwind CSS",
     name: "Portfolio/Home Page",
     images: [ImgProj9, ImgProj9_2],
     github: "https://github.com/simeonbikov/simeonbikov.github.io",
