@@ -13,7 +13,7 @@ const Navbar = () => {
       {/* <img src={Logo} alt="Logo Image" style={{ width: "30px" }} /> */}
 
       {/* navbar menu */}
-      <ul className="hidden md:flex">
+      <ul className="hidden lg:flex">
         <li className="hover:text-primary2">
           <HashLink smooth to="/#home">
             Home
@@ -30,7 +30,7 @@ const Navbar = () => {
       </ul>
 
       {/* hamburger */}
-      <div onClick={handleClick} className="md:hidden z-10">
+      <div onClick={handleClick} className="lg:hidden z-10">
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
 
@@ -66,7 +66,7 @@ const Navbar = () => {
       </ul>
 
       {/* social icons */}
-      <div className="hidden md:flex fixed flex-col top-[35%] left-0">
+      <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-primary1">
             <a

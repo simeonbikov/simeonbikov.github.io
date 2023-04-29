@@ -12,7 +12,7 @@ const Project = () => {
   }, [pathname]);
 
   return (
-    <div className="w-full text-dark1 bg-light1 py-[60px] md:pl-[60px]">
+    <div className="w-full text-dark1 bg-light1 py-[60px]">
       <div className="max-w-[900px] mx-auto flex flex-col justify-center py-4 px-6">
         {project.name && (
           <div className="py-8">
@@ -80,7 +80,7 @@ const Project = () => {
               }}
               className="bg-light1 text-dark1 border-dark1 border-2 hover:bg-dark1 hover:text-light1 px-8 py-2 m-8 text-lg mx-auto flex items-center"
             >
-              Demo
+              Live
             </button>
           )}
         </div>
@@ -95,7 +95,7 @@ const Project = () => {
                 return (
                   <div
                     key={index}
-                    className="max-w-[500px] h-[100%] my-5 shadow-md shadow-dark2"
+                    className="max-w-[800px] h-[100%] my-5 shadow-md shadow-dark2"
                   >
                     <img
                       src={image}
@@ -118,7 +118,7 @@ const Project = () => {
                 return (
                   <div
                     key={index}
-                    className="max-w-[300px] h-[100%] m-4 shadow-md shadow-dark2"
+                    className="max-w-[350px] h-[100%] m-4 shadow-md shadow-dark2"
                   >
                     <img
                       src={image}

@@ -30,10 +30,22 @@ export const data = [
     // live: "https://cyf-thedailyprophet.netlify.app/",
     templatesImg: [ImgTempl1],
     summary:
-      "For one of my first homework assignments, I created a webpage featuring three articles, each article includes a title, picture, and summary, using templates as a starting point for the design.",
+      "For one of my first homework assignments I created a webpage featuring three articles, each article includes a title, picture, and summary, using templates as a starting point for the design. Although it's a simple page, I decided to showcase it in my portfolio because of the effort I put into the UI.",
   },
   {
     id: 2,
+    date: "07/2022",
+    technologies: "Copy Design, HTML, CSS",
+    type: "CodeYourFuture - homework/coursework",
+    name: "Karma Clone",
+    images: [ImgProj3, ImgProj3_2],
+    github: "https://github.com/simeonbikov/HTML-CSS-Coursework-Week3",
+    // live: "https://cyf-simeonbikov-karma.netlify.app/",
+    summary:
+      "I successfully created my first web page based on a provided sketch.",
+  },
+  {
+    id: 3,
     date: "07/2022",
     technologies: "Design, HTML, CSS",
     type: "CodeYourFuture - homework/coursework",
@@ -43,18 +55,7 @@ export const data = [
     // live: "https://cyf-simeonbikov-cake.netlify.app/",
     templatesImg: [ImgTempl3, ImgTempl3_2],
     summary:
-      "Created a responsive website to showcase a cake business, using templates as a starting point for the design. Followed Mobile First principles.",
-  },
-  {
-    id: 3,
-    date: "07/2022",
-    technologies: "Copy Design, HTML, CSS",
-    type: "CodeYourFuture - homework/coursework",
-    name: "Karma Clone",
-    images: [ImgProj3, ImgProj3_2],
-    github: "https://github.com/simeonbikov/HTML-CSS-Coursework-Week3",
-    // live: "https://cyf-simeonbikov-karma.netlify.app/",
-    summary: "Created the webpage based on a provided sketch.",
+      "Created a responsive website to showcase a cake business, using templates as a starting point for the design. Followed Mobile First principles. Although this page is simple, I decided to include it in my portfolio to demonstrate my progress.",
   },
   {
     id: 4,
@@ -103,7 +104,7 @@ export const data = [
     name: "Video Recommendation",
     images: [ImgProj7],
     github: "https://github.com/simeonbikov/Full-Stack-Project-Assessment",
-    live: "https://cyf-video-recommendation.netlify.app/",
+    // live: "https://cyf-video-recommendation.netlify.app/",
     summary:
       "Developed a Full Stack web application for viewing recommended videos. The app allows users to post and delete their favourite YouTube videos, upvote or downvote videos and sort videos in ascending or descending order by rating. The app's API was built using Express, and all data is stored in a PostgreSQL database that was created.",
   },
