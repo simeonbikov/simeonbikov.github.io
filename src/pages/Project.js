@@ -95,7 +95,7 @@ const Project = () => {
                 return (
                   <div
                     key={index}
-                    className="max-w-[800px] h-[100%] my-5 shadow-md shadow-dark2"
+                    className="max-w-[800px] h-[100%] mt-5 mb-12 shadow-md shadow-dark2"
                   >
                     <img
                       src={image}

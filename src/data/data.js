@@ -99,7 +99,7 @@ export const data = [
   {
     id: 7,
     date: "01/2023",
-    technologies: "Design, React JS, Material UI, Rest APIs, Node, PostgreSQL",
+    technologies: "Design, React JS, Material UI, Rest API, Node, PostgreSQL",
     type: "CodeYourFuture - homework/coursework",
     name: "Video Recommendation",
     images: [ImgProj7],
@@ -112,7 +112,7 @@ export const data = [
     id: 8,
     date: "03/2023",
     technologies:
-      "Agile methodology, React JS, Bootstrap, Rest APIs/Express, Node, PostgreSQL",
+      "Agile methodology, React JS, Bootstrap, Rest API/Express, Node, PostgreSQL",
     type: "CodeYourFuture - Team Project",
     name: "Future Hire - Team Project",
     images: [ImgProj8, ImgProj8_2],

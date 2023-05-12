@@ -12,9 +12,12 @@ const Projects = () => {
   }, [pathname]);
 
   return (
-    <div id="projects" className="w-full text-dark1 bg-light1 py-[60px]">
+    <div
+      id="projects"
+      className="w-full text-dark1 bg-light1 py-[60px] mb-12"
+    >
       <div className="lg:max-w-[900px] xl:max-w-[1200px] mx-auto px-6 flex flex-col justify-center">
-        <div className="py-6 mb-5">
+        <div className="py-12">
           <p className="text-lg sm:text-3xl font-medium text-center">
             {"{ Check out some of my recent work }"}
           </p>
@@ -48,9 +51,6 @@ const Projects = () => {
                       More Info
                     </button>
                   </div>
-                  {/* <p className="text-sm font bold text-light1 tracking-wider mb-3">
-                    {project.date}
-                  </p> */}
                   <p className="text-sm font bold text-light1 tracking-wider mx-5">
                     {project.technologies}
                   </p>
